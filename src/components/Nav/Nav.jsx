@@ -28,7 +28,11 @@ const Nav = () => {
                 }
             
             </div>
-            <ul className={`md:flex gap-10 absolute md:static duration-1000 px-6 ${open ? 'top-10' : '-top-60'}`}>
+
+
+            {/* <ul className={`md:flex gap-10 md:justify-center absolute md:static duration-1000 px-6 ${open ? 'top-10' : 'hidden'}`}></ul> or, */}
+
+            <ul className={`md:flex gap-8 md:justify-center absolute md:static duration-1000 px-6 ${open ? 'top-10' : '-top-60'}`}>
                 {
                     routes.map(route => <Link
                         key={route.id}
